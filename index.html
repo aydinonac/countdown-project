@@ -4,31 +4,38 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Countdown Timer - New Year Countdown</title>
+	<title>Countdown Timer</title>
 	<link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-<!-- <form>
-		<h2> Type in your target date:<h2>
-	    <label>Target Year:</label>
-	    <input type="text" name="targetYear" value=""><br>
-	    <label>Target Month:</label>
-	    <input type="text" name="targetMonth" value=""><br>
-	    <label>Target Date:</label>
-	    <input type="text" name="targetDate" value=""><br>
-	    <label>Target Time: hr:min:sec(2 digits each):</label>
-	    <input type="text" name="targetTime" value=""><br>
-	    <console.log(targetYear)>  
-	</form> -->
+	<p style="font-size: 40px; font-style: italic; text-shadow: 4px 4px 8px lightcyan;">The Great Countdown!</p>
+	<form>
+        Use the dropdown calendar to select your target date and time: 
+        <input type="datetime-local" id="my" value="">
+        <button type="button" onclick="myFunction()">Submit</button>
+    </form>
 
-	<h1>Ready to Countdown!</h1>
-	<div class="countdown-timer"></div>
-	<div class="message"></div>
-	<div class="year"></div>
-
+	<div class = "row">
+		<div class = "column" style = "background: dodgerblue; border: 3px solid blue; box-shadow: 3px 7px blue;">
+			<h1 style="text-align: center;">New Year countdown!</h1>
+			<div class="countdown-timer"></div>
+			<div class="message"></div>
+			<div class="year"></div>
+		</div>
+		<div class = "column" style = "color: yellow; background: lightseagreen; border: 3px solid green; box-shadow: 3px 7px green;">
+			<h1 style="text-align: center;">Countdown to your target</h1>
+			<div class="countdown2-timer2"></div>
+			<div class="message2"></div><br><br>
+			<div class="year2"></div>
+		</div>
+	</div> 
 	<script src="js/countdown.js"></script>
 	<script src="js/app.js"></script>
+	<script src="js/countdown2.js"></script>
+	<script src="js/app2.js"></script>
+
+	
 </body>
 
 </html>

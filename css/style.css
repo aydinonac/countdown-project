@@ -5,20 +5,42 @@
 }
 
 * {
-    margin: 0;
+    margin: 10px;
     padding: 0;
     box-sizing: border-box;
 }
+form {
+    background: lightpink;
+    color: maroon;
+    display: flex;
+    font-size: 20px;
+    padding: 10px;
 
+}
+input {
+   font-size: 20px; 
+   width: 300px;
+   box-shadow: 2px 5px grey;
+   border-radius: 5px;
+}
+button {
+   font-size: 20px;
+   padding: 5px;
+   color: red;
+   border: 2px solid brown;
+   font-weight: bold; 
+   box-shadow: 2px 5px firebrick;
+   border-radius: 5px;
+}
 body {
     font-family: 'Open Sans', sans-serif;
-    font-size: 16px;
+    font-size: 12px;
     line-height: 1.8;
-    /* background */
+     
     background-image: url('../img/new-year.jpg');
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center center;
+    background-position: leftcenter;
     color: var(--primary-color);
     /* layout */
     display: flex;
@@ -27,14 +49,24 @@ body {
     align-items: center;
 
     height: 100vh;
-    margin: 0 20px;
+
+    margin: 10px;
     overflow: hidden;
 
 }
+.row {
+    display: flex;
+    margin: 10px
+}
+
+.column {
+    flex: 45%;
+    margin: 10px
+}
 
 h1 {
-    font-size: 60px;
-    margin: -80px 0 40px;
+    font-size: 25px;
+    margin: 10px;
 }
 
 .count-down {
@@ -46,9 +78,23 @@ h1 {
     justify-content: center;
     align-items: center;
 }
-
-
 .timer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 15px;
+}
+.count-down2 {
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.timer2 {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -57,60 +103,69 @@ h1 {
 }
 
 .timer h2 {
-    margin: 0 0 20px;
-    font-size: 4rem;
+    margin: 10px;
+    font-size: 1.5rem;
 }
-
-
 .message {
     font-size: 60px;
     font-size: bold;
 }
-
+.timer2 h2 {
+    margin: 10px;
+    font-size: 1.5rem;
+}
+.message2 {
+    font-size: 60px;
+    font-size: bold;
+}
 
 small {
     padding-top: 5px;
-    font-size: 1.5rem;
+    font-size: 0.8rem;
     text-transform: uppercase;
     display: block;
 }
 
+
 .year {
-    font-size: 200px;
-    z-index: -1;
-    opacity: 0.2;
-    position: absolute;
+    font-size: 100px;
+    opacity: 0.4;
     bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
     margin: 0;
+    color: lightskyblue;
+    text-align: center;
+}
+.year2 {
+    font-size: 100px;
+    opacity: 0.4;
+    bottom: 0;
+    margin: 0;
+    color: lightskyblue;
+    text-align: center;
 }
 
 @media (max-width: 500px) {
-    h1 {
-        font-size: 22px;
-    }
+    h1 {font-size: 10px;}
 
-    .timer {
-        margin: 5px;
-    }
-
+    .timer {margin: 5px;}
     .timer h2 {
         font-size: 30px;
-        margin: 0;
+        margin: 10px;
         text-align: center;
     }
+    .timer small {font-size: 12px;}
 
-    .timer small {
-        font-size: 12px;
+    .timer2 {margin: 5px;}
+    .timer2 h2 {
+        font-size: 30px;
+        margin: 10px;
+        text-align: center;
     }
+    .timer2 small {font-size: 12px;}
 
-    .year {
-        font-size: 100px;
+    .year {font-size: 100px;}
+    .message {font-size: 25px;}
 
-    }
-
-    .message {
-        font-size: 25px;
-    }
+    .year2 {font-size: 100px;}
+    .message2 {font-size: 25px;}
 }

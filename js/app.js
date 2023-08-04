@@ -2,15 +2,14 @@ const getNewYear = () => {
     const currentYear = new Date().getFullYear();
     return new Date(`January 01 ${currentYear + 1} 00:00:00`);
 };
-//Alternative target date:
-// const getNewYear = () => new Date('August 01 2023 16:22:00')
-
+// const getNewYear = () => new Date('August 4 2023 21:42:00')
 const heading = document.querySelector('h1');
 const app = document.querySelector('.countdown-timer');
 const message = document.querySelector('.message');
 
 const year = document.querySelector('.year');
 year.innerHTML = getNewYear().getFullYear();
+
 const newYear = year.innerHTML
 
 const format = (t) => {
@@ -62,13 +61,3 @@ const countdownTimer = new CountDown(
     render,
     complete
 );
-
-
-
-
-
-
-
-
-
-
