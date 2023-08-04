@@ -11,7 +11,7 @@ class CountDown2 {
     }
     complete2() {
         if (typeof this.onComplete2 === 'function') {
-            onComplete2();
+            this.onComplete2();
         }}
     getTime2() {
         return {
@@ -31,7 +31,7 @@ class CountDown2 {
         const intervalId2 = setInterval(() => {
             this.timeRemaining2 -= 1000;
             if (this.timeRemaining2 < 0) {
-                complete2();
+                this.complete2();
                 clearInterval(intervalId2);
             } else {
                 this.update2();
