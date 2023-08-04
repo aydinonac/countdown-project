@@ -15,6 +15,7 @@ form {
     display: flex;
     font-size: 20px;
     padding: 10px;
+    max-width: 90%;
 
 }
 input {
@@ -59,9 +60,14 @@ body {
     margin: 10px
 }
 
-.column {
-    flex: 45%;
-    margin: 10px
+.countdownContainer {
+  display: flex;
+  flex-direction: row;
+}
+@media (max-width: 800px) {
+  .countdownContainer {
+    flex-direction: column;
+  }
 }
 
 h1 {
